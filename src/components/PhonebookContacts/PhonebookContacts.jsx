@@ -9,7 +9,6 @@ const PhonebookContacts = () => {
   const dispatch = useDispatch();
   const contacts = useSelector(selectContacts);
   const filterValue = useSelector(getFilter);
-
    const filteredContacts = contacts.filter(contact =>
     contact.name.toLowerCase().includes(filterValue)
   );

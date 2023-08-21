@@ -15,10 +15,10 @@ const PhonebookForm = ( ) => {
 
   const handleSubmit = e => {
     e.preventDefault();
-       if (contacts.some(contact => contact.name === name)) {
+       if (contacts.some(contact => contact.name.toLowerCase() === name)) {
       alert(`${name} is already in contacts.`);
     } else {
-      dispatch(addContact({id: nanoid(), name, number }));
+      dispatch(addContact({name, number }));
     }
 
     reset();
