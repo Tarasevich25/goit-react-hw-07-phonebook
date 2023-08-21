@@ -2,8 +2,7 @@ import css from './PhonebookForm.module.css';
 import React, { useState } from 'react';
  import { addContact } from '../../redux/operations';
 import { useDispatch, useSelector } from 'react-redux';
-import { nanoid } from 'nanoid';
- import { selectContacts } from 'redux/selectors';
+import { selectContacts } from 'redux/selectors';
 
 
 const PhonebookForm = ( ) => {
